@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="labeltextTotVlrMatEnt" blendMode="DIFFERENCE" prefHeight="356.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sgb.EntradaFormController">
+   <children>
+      <Label fx:id="labelUser" layoutX="414.0" layoutY="13.0" textFill="#77cdca" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="18.0" prefHeight="19.0" prefWidth="96.0" text="Número" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="textNumeroEnt" editable="false" layoutX="139.0" layoutY="16.0" prefHeight="22.0" prefWidth="60.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="10.0" />
+      <Label text="Data" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpDataEnt" editable="false" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="40.0" />
+      <Label text="NNF" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="70.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textNnfEnt" prefHeight="22.0" prefWidth="60.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="70.0" />
+      <Label text="Filtra(Forn)" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="100.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textIniciaisForn" prefHeight="22.0" prefWidth="68.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="100.0" />
+      <Button fx:id="btPesqForn" mnemonicParsing="false" onAction="#onBtPesqFornAction" text="Pesquisa Fornecedor" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="17.0" layoutY="63.0" text="Fornecedor" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+      </Label>
+      <ComboBox fx:id="comboBoxFornEnt" prefWidth="150.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="135.0" />
+      <Label text="Filtra(Prod)" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="165.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textIniciaisProd" prefHeight="22.0" prefWidth="68.0" text=" " AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="165.0" />
+      <Button fx:id="btPesqProd" mnemonicParsing="false" onAction="#onBtPesqProdAction" text="Pesquisa Produto" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="165.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="15.0" layoutY="96.0" prefHeight="19.0" prefWidth="82.0" text="Produto" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="200.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxProdEnt" prefWidth="150.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="200.0" />
+      <Label layoutX="17.0" layoutY="128.0" prefHeight="19.0" prefWidth="82.0" text="Quantidade" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="230.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textQtdProdEnt" layoutX="141.0" layoutY="127.0" prefHeight="22.0" prefWidth="60.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="230.0" />
+      <Label layoutX="14.0" layoutY="164.0" prefHeight="19.0" prefWidth="96.0" text="Valor unitário" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="260.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textVlrProdEnt" layoutX="141.0" layoutY="162.0" prefHeight="22.0" prefWidth="60.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="260.0" />
+      <Label text="Total" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="290.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelTotVlrProdEnt" prefHeight="14.0" prefWidth="60.0" text=" " textFill="#3a0dda" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="290.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="btSaveEnt" layoutX="139.0" layoutY="319.0" mnemonicParsing="false" onAction="#onBtSaveEntAction" prefHeight="22.0" prefWidth="82.0" text="Ok" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="320.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCancelEnt" layoutX="283.0" layoutY="319.0" mnemonicParsing="false" onAction="#onBtCancelEntAction" prefHeight="22.0" prefWidth="82.0" text="Cancela" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="320.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" top="2.0" />
+         </padding>
+      </Button>
+      <Label fx:id="labelErrorDataEnt" text=" " textFill="#eb1111" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorNnfEnt" prefHeight="15.0" prefWidth="164.0" text=" " textFill="#d00a0a" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorQtdProdEnt" layoutX="386.0" layoutY="97.0" prefHeight="19.0" prefWidth="150.0" text=" " textFill="#e40d0d" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="230.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label fx:id="labelErrorVlrProdEnt" layoutX="246.0" layoutY="160.0" prefHeight="19.0" prefWidth="164.0" text=" " textFill="#ee0808" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="260.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+      </Label>
+   </children>
+   <effect>
+      <ColorAdjust hue="0.26" saturation="0.26" />
+   </effect>
+</AnchorPane>

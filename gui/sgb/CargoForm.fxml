@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane blendMode="DIFFERENCE" prefHeight="208.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sgb.CargoFormController">
+   <children>
+      <GridPane blendMode="DARKEN" layoutX="34.0" layoutY="9.0" prefHeight="195.0" prefWidth="524.0" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="9.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="0.0" prefWidth="97.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="389.0" minWidth="10.0" prefWidth="161.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="153.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="14.0" prefWidth="89.0" text="Código" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" top="2.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Label>
+            <HBox prefHeight="48.0" prefWidth="66.0" GridPane.columnIndex="1">
+               <children>
+                  <TextField fx:id="textCodigoCargo" editable="false" prefHeight="22.0" prefWidth="31.0">
+                     <HBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Label prefHeight="14.0" prefWidth="101.0" text="Nome" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" top="2.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <TextField fx:id="textNomeCargo" prefHeight="22.0" prefWidth="140.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Label text="Salário" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" top="2.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Label>
+            <HBox prefHeight="25.0" prefWidth="94.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <TextField fx:id="textSalarioCargo" prefHeight="22.0" prefWidth="66.0">
+                     <HBox.margin>
+                        <Insets bottom="2.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Label text="Comissão" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" top="2.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <TextField fx:id="textComissaoCargo" prefHeight="22.0" prefWidth="41.0" text=" ">
+                     <HBox.margin>
+                        <Insets bottom="2.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label prefHeight="14.0" prefWidth="16.0" text="\%">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btSaveCargo" mnemonicParsing="false" onAction="#onBtSaveCargoAction" prefHeight="24.0" prefWidth="90.0" text="Ok">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btCancelCargo" mnemonicParsing="false" onAction="#onBtCancelCargoAction" prefHeight="24.0" prefWidth="90.0" text="Cancela">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </opaqueInsets>
+            </HBox>
+            <Label fx:id="labelErrorNomeCargo" prefHeight="15.0" prefWidth="177.0" text=" " textFill="#da0e0e" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="labelErrorSalarioCargo" layoutX="277.0" layoutY="62.0" prefHeight="15.0" prefWidth="177.0" text=" " textFill="#da0e0e" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelUser" textFill="#7dd0d0" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </GridPane>
+   </children>
+   <effect>
+      <ColorAdjust brightness="0.02" contrast="0.01" hue="0.26" saturation="0.28" />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane blendMode="DIFFERENCE" prefHeight="224.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sgb.AdiantamentoFormController">
+   <children>
+      <Label fx:id="labelUser" layoutX="506.0" layoutY="9.0" textFill="#88c9c9" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textNumeroAdi" editable="false" layoutX="127.0" layoutY="15.0" prefHeight="22.0" prefWidth="39.0" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="10.0" />
+      <Label text="Filtra(func)" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="45.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textIniciais" prefHeight="22.0" prefWidth="64.0" text=" " AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="45.0" />
+      <Button fx:id="btPesquisa" mnemonicParsing="false" onAction="#onBtPesquisaAction" text="Pesquisa" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="45.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="16.0" layoutY="55.0" text="Funcionário" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+      </Label>
+      <ComboBox fx:id="comboBoxFun" prefWidth="150.0" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="80.0" />
+      <Label layoutX="18.0" layoutY="87.0" prefHeight="19.0" prefWidth="76.0" text="Data" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="115.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpDataAdi" editable="false" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="115.0" />
+      <Label layoutX="20.0" layoutY="153.0" text="Valor" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="150.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textValeAdi" layoutX="127.0" layoutY="121.0" prefHeight="22.0" prefWidth="64.0" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="150.0" />
+      <Button fx:id="btSaveAdi" layoutX="119.0" layoutY="411.0" mnemonicParsing="false" onAction="#onBtSaveAdiAction" prefHeight="22.0" prefWidth="82.0" text="Ok" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="185.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCancelAdi" layoutX="335.0" layoutY="411.0" mnemonicParsing="false" onAction="#onBtCancelAdiAction" prefHeight="22.0" prefWidth="82.0" text="Cancela" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="185.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" top="2.0" />
+         </padding>
+      </Button>
+      <Label fx:id="labelErrorNomeAdi" layoutX="496.0" layoutY="58.0" prefHeight="19.0" prefWidth="221.0" textFill="#ee0909" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorDataAdi" layoutX="501.0" layoutY="90.0" prefHeight="15.0" prefWidth="221.0" text=" " textFill="#e40d0d" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="115.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorValeAdi" layoutX="375.0" layoutY="156.0" prefHeight="15.0" prefWidth="221.0" text=" " textFill="#f50a0a" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="16.0" prefHeight="19.0" prefWidth="56.0" text="Número" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="10.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <ColorAdjust brightness="0.02" contrast="0.05" hue="0.26" saturation="0.26" />
+   </effect>
+</AnchorPane>

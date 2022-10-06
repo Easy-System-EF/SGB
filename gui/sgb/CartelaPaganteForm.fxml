@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane blendMode="DIFFERENCE" prefHeight="286.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sgb.CartelaPaganteFormController">
+   <children>
+      <Label fx:id="labelUser" text=" " textFill="#64d7c0" AnchorPane.leftAnchor="550.0" AnchorPane.topAnchor="5.0" />
+      <Label text="Fechamento" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label text="Pagante(s)" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textPaganteCartelaPag" editable="false" prefHeight="22.0" prefWidth="22.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="35.0" />
+      <Label text="Cartela" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="65.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCartela" editable="false" prefHeight="22.0" prefWidth="56.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="65.0" />
+      <Label text="Data" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="95.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textDataCartelaPag" editable="false" prefHeight="22.0" prefWidth="76.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="95.0" />
+      <Label text="Local" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textLocalCartelaPag" editable="false" prefHeight="22.0" prefWidth="56.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="125.0" />
+      <Label text="Consumo" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="155.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textConsumoCartela" editable="false" prefHeight="22.0" prefWidth="56.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="155.0" />
+      <Label text="Valor" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="185.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textValorCartelaPag" prefHeight="22.0" prefWidth="56.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="185.0" />
+      <Label text="Forma" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbFormaDinheiroCartelaPag" mnemonicParsing="false" prefHeight="12.0" prefWidth="56.0" text="Dinheiro" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="454.0" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbFormaPixCartelaPag" mnemonicParsing="false" text="Pix" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbFormaDebitoCartelaPag" mnemonicParsing="false" text="Débito" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbFormaCartaoCartelaPag" mnemonicParsing="false" text="Crédito" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="btSaveCartelaPag" mnemonicParsing="false" onAction="#onBtSaveCartelaPaganteAction" prefHeight="22.0" prefWidth="68.0" text="Ok" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="245.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCancelCartelaPag" mnemonicParsing="false" onAction="#onBtCancelCartelaPaganteAction" prefHeight="23.0" prefWidth="68.0" text="Cancela" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="245.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelErrorFormaCartelaPag" prefHeight="14.0" prefWidth="252.0" text=" " textFill="#e42a2a" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Label>
+      <Label fx:id="labelErrorValorCartelaPag" prefHeight="14.0" prefWidth="252.0" text=" " textFill="#eb2929" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="185.0">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font></Label>
+   </children>
+   <effect>
+      <ColorAdjust hue="0.26" saturation="0.26" />
+   </effect>
+</AnchorPane>

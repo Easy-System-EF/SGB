@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="196.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sgcp.TipoConsumoListController">
+   <children>
+      <ToolBar blendMode="DIFFERENCE" prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="btNew" mnemonicParsing="false" onAction="#onBtNewAction" text="Novo">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" top="2.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label prefHeight="22.0" prefWidth="172.0" text="          Tipo Consumo">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label fx:id="labelUser" textFill="#8cc6c6">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Label>
+        </items>
+         <effect>
+            <Blend opacity="0.5" />
+         </effect>
+      </ToolBar>
+      <TableView fx:id="tableViewTipoConsumo" blendMode="DARKEN" prefHeight="115.0" prefWidth="20.0">
+        <columns>
+          <TableColumn fx:id="tableColumnCodigoTipo" prefWidth="57.0" text="Código" />
+          <TableColumn fx:id="tableColumnNomeTipo" prefWidth="139.0" text="Descrição" />
+            <TableColumn fx:id="tableColumnEDITA" prefWidth="56.0" text=" " />
+            <TableColumn fx:id="tableColumnREMOVE" maxWidth="63.0" prefWidth="62.0" text=" " />
+        </columns>
+      </TableView>
+   </children>
+   <effect>
+      <Lighting>
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+         <light>
+            <Light.Distant />
+         </light>
+      </Lighting>
+   </effect>
+</VBox>

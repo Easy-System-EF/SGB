@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox blendMode="DIFFERENCE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label prefHeight="20.0" prefWidth="392.0" text="Sistema Gerencial de Bar e Restaurante   v.22.09.01" textFill="#3a0fe8">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="50.0" top="50.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="Sobre SGB" textFill="#88b8d0">
+         <VBox.margin>
+            <Insets left="200.0" top="40.0" />
+         </VBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label text="Contas  a Receber">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="75.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="Controle de Estoque">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="75.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="Fechamentos e Relatórios:">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="75.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="- Cartela">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="100.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="- Comissão">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="100.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="- Folha">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="100.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="- Mes">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="100.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="Contas a Pagar">
+         <VBox.margin>
+            <Insets left="75.0" />
+         </VBox.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <Blend opacity="0.51" />
+   </effect>
+</VBox>

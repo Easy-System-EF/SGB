@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewSgbController">
+   <content>
+      <VBox prefHeight="375.0" prefWidth="610.0">
+         <children>
+            <MenuBar blendMode="DIFFERENCE" cache="true">
+              <menus>
+                <Menu fx:id="Cadastros" mnemonicParsing="false" text="Cadastros">
+                     <items>
+                        <MenuItem fx:id="menuItemLogin" mnemonicParsing="false" onAction="#onBtLoginAction" text="Login" />
+                        <MenuItem fx:id="menuItemCompromisso" mnemonicParsing="false" onAction="#onMenuItemCompromissoAction" text="Contas a Pagar" />
+                        <MenuItem fx:id="menuItemFornecedor" mnemonicParsing="false" onAction="#onMenuItemFornecedorAction" text="Fornecedor" />
+                        <MenuItem fx:id="menuItemTipoConsumo" mnemonicParsing="false" onAction="#onMenuItemTipoConsumoAction" text="Tipo de Consumo" />
+                        <MenuItem fx:id="menuItemGrupo" mnemonicParsing="false" onAction="#onMenuItemGrupoAction" text="Grupo Produto" />
+                        <MenuItem fx:id="menuItemProduto" mnemonicParsing="false" onAction="#onMenuItemProdutoAction" text="Produto" />
+                        <MenuItem fx:id="menuItemCargo" mnemonicParsing="false" onAction="#onMenuItemCargoAction" text="Cargo" />
+                        <MenuItem fx:id="menuItemFuncionario" mnemonicParsing="false" onAction="#onMenuItemFuncionarioAction" text="Funcionário" />
+                        <MenuItem fx:id="menuItemAdiantamento" mnemonicParsing="false" onAction="#onMenuItemAdiantamentoAction" text="Adiantamento" />
+                        <MenuItem fx:id="menuItemEntrada" mnemonicParsing="false" onAction="#onMenuItemEntradaAction" text="Entrada" />
+                        <MenuItem fx:id="menuItemCartela" mnemonicParsing="false" onAction="#onMenuItemCartelaAction" text="Cartela" />
+                     </items>
+                </Menu>
+                <Menu fx:id="Relatórios" mnemonicParsing="false" text="Relatórios">
+                     <items>
+                        <MenuItem fx:id="menuItemRelatorioParcelaAberto" mnemonicParsing="false" onAction="#onMenuItemRelatorioParcelaAbertoAction" text="Contas a Pagar" />
+                        <MenuItem fx:id="menuItemRelatorioParcelaPago" mnemonicParsing="false" onAction="#onMenuItemRelatorioParcelaPagoAction" text="Contas Pagas" />
+                     </items></Menu>
+                <Menu fx:id="Consultas" mnemonicParsing="false" text="Consultas">
+                     <items>
+                        <MenuItem fx:id="menuItemConsultaAberto" mnemonicParsing="false" onAction="#onMenuItemConsultaAbertoAction" text="Contas a Pagar" />
+                        <MenuItem fx:id="menuItemConsultaPago" mnemonicParsing="false" onAction="#onMenuItemConsultaPagoAction" text="Contas Pagas" />
+                        <MenuItem fx:id="menuItemConsultaCartelaAberto" mnemonicParsing="false" onAction="#onMenuItemConsultaCartelaAbertoAction" text="Cartela em Aberto" />
+                        <MenuItem fx:id="menuItemConsultaCartelaPago" mnemonicParsing="false" onAction="#onMenuItemConsultaCartelaPagoAction" text="Cartela Paga" />
+                        <MenuItem fx:id="menuItemConsultaComissao" mnemonicParsing="false" onAction="#onMenuItemConsultaComissaoAction" text="Comissão" />
+                        <MenuItem fx:id="menuItemConsultaFolhaMes" mnemonicParsing="false" onAction="#onMenuItemConsultaFolhaMesAction" text="Folha Mês" />
+                        <MenuItem fx:id="menuItemConsultaFechamentoMes" mnemonicParsing="false" onAction="#onMenuItemConsultaFechamentoMesAction" text="FechamentoMes" />
+                     </items></Menu>
+                  <Menu fx:id="Ajuda" mnemonicParsing="false" text="Ajuda">
+                     <items>
+                        <MenuItem fx:id="menuItemSobre" mnemonicParsing="false" onAction="#onMenuItemSobreAction" text="Sobre" />
+                     </items></Menu>
+              </menus>
+               <effect>
+                  <ColorAdjust brightness="-0.51" contrast="0.27" hue="-0.81" saturation="0.2" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MenuBar>
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+              <items>
+                  <Button fx:id="btLogin" mnemonicParsing="false" onAction="#onBtLoginAction" text="Login">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="labelUser" prefHeight="14.0" prefWidth="85.0" textFill="#a5bdd0">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+              </items>
+               <effect>
+                  <ColorAdjust brightness="-0.32" contrast="0.03" />
+               </effect>
+            </ToolBar>
+         </children>
+      </VBox>
+   </content>
+   <effect>
+      <ColorAdjust brightness="-0.04" contrast="-0.05" />
+   </effect>
+</ScrollPane>

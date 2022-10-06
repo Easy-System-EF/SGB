@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane blendMode="DIFFERENCE" prefHeight="352.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sgb.CartelaVirtualFormController">
+   <children>
+      <Label fx:id="labelUser" layoutX="552.0" layoutY="7.0" text=" " textFill="#9ff2e9" />
+      <Label fx:id="labelEntidade" text="Consumo" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label text="Cartela" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCartelaVir" editable="false" prefHeight="22.0" prefWidth="38.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="35.0" />
+      <Label text="Local" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="65.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textLocalVir" editable="false" prefHeight="22.0" prefWidth="76.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="65.0" />
+      <Label text="Filtro(Fun)" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="95.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textPesquisaFun" prefHeight="22.0" prefWidth="76.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="95.0" />
+      <Button fx:id="btPesquisaFun" mnemonicParsing="false" onAction="#onBtPesqFunAction" text="Pesquisa" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="95.0" />
+      <Label text="Funcionário" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxFunVir" prefWidth="150.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="125.0" />
+      <Label text="Filtro(Prod)" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="155.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textPesquisaProd" prefHeight="22.0" prefWidth="76.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="155.0" />
+      <Button fx:id="btPesquisaProd" mnemonicParsing="false" onAction="#onBtPesqProdAction" text="Pesquisa" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="155.0" />
+      <Label text="Produto" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="185.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxProdVir" prefWidth="150.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="185.0" />
+      <Label text="Quantidade" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="215.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textQtdProdVir" prefHeight="22.0" prefWidth="56.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="215.0" />
+      <Label fx:id="labelErrorQtdProdVir" prefHeight="14.0" prefWidth="252.0" text=" " textFill="#e42a2a" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="215.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Label>
+      <Label text="Valor" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="245.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelVendaProdVir" text=" " AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="245.0" />
+      <Label text="Total" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="275.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelTotalProdVir" text=" " textFill="#2a10d3" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="275.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorTotProdVir" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="245.0">
+         <font>
+            <Font name="System Bold" size="1.0" />
+         </font>
+      </Label>
+      <Button fx:id="btSaveVir" mnemonicParsing="false" onAction="#onBtSaveVirAction" prefHeight="22.0" prefWidth="68.0" text="Ok" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="305.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCancelVir" mnemonicParsing="false" onAction="#onBtCancelVirAction" prefHeight="23.0" prefWidth="68.0" text="Cancela" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="305.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <ColorAdjust hue="0.27" saturation="0.28" />
+   </effect>
+</AnchorPane>

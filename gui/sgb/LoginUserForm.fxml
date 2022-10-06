@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane blendMode="DIFFERENCE" prefHeight="199.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sgb.LoginUsertFormController">
+   <children>
+      <Label text="Número" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textNumeroLog" editable="false" prefHeight="22.0" prefWidth="36.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="5.0" />
+      <Label text="Nome" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="35.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textNomeLog" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="35.0" />
+      <Label text="Nível" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="65.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textNivelLog" prefHeight="22.0" prefWidth="36.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="65.0" />
+      <Label prefHeight="25.0" prefWidth="58.0" text="Senha" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="95.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordSenhaLog" layoutX="174.0" layoutY="13.0" prefHeight="24.0" prefWidth="61.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="95.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </PasswordField>
+      <Label text="Confirma" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="130.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordConfirmaLog" prefHeight="24.0" prefWidth="61.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="130.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding></PasswordField>
+      <Label fx:id="labelErrorNomeLog" layoutX="207.0" prefHeight="15.0" prefWidth="207.0" text=" " textFill="#da0606" AnchorPane.leftAnchor="207.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorNivelLog" layoutX="110.0" prefHeight="15.0" prefWidth="304.0" textFill="#e84b4b" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorSenhaLog" prefHeight="15.0" prefWidth="207.0" textFill="#f25555" AnchorPane.leftAnchor="207.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelErrorConfirmaLog" prefHeight="14.0" prefWidth="207.0" textFill="#e81d1d" AnchorPane.leftAnchor="207.0" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAction" prefHeight="22.0" prefWidth="61.0" text="Ok" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="160.0" />
+      <Button fx:id="btCancel" layoutX="133.0" mnemonicParsing="false" onAction="#onBtCancelAction" prefHeight="22.0" prefWidth="58.0" text="Cancela" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="160.0" />
+   </children>
+   <effect>
+      <ColorAdjust brightness="-0.36" contrast="0.32" hue="0.01" saturation="0.27" />
+   </effect>
+</AnchorPane>

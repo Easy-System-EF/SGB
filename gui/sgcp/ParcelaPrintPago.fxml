@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="201.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sgcp.ParcelaPrintPagoController">
+   <children>
+      <Label fx:id="labelTitulo" prefHeight="22.0" prefWidth="332.0" text="Lista Contas(s) Paga(s) ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="10.0" top="2.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="5.0" left="250.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <ToolBar fx:id="labelUser" blendMode="DIFFERENCE" prefHeight="40.0" prefWidth="560.0">
+        <items>
+          <Button fx:id="btPeriodoPago" mnemonicParsing="false" onAction="#onBtPeriodoAction" text="Período">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btFornecedorPago" mnemonicParsing="false" onAction="#onBtFornecedorAction" prefHeight="23.0" prefWidth="89.0" text="Fornecedor">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btTipoPago" mnemonicParsing="false" onAction="#onBtTipoAction" prefHeight="22.0" prefWidth="80.0" text="Tipo">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btImprimePago" mnemonicParsing="false" onAction="#onBtImprimeAction" prefHeight="23.0" prefWidth="81.0" text="Listagem">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelNada" textFill="#6bd0ce">
+               <padding>
+                  <Insets left="340.0" />
+               </padding>
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+        </items>
+         <padding>
+            <Insets bottom="3.0" left="5.0" top="3.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <effect>
+            <Blend />
+         </effect>
+      </ToolBar>
+      <TableView fx:id="tableViewParcelaPago" blendMode="DARKEN" prefHeight="64.0" prefWidth="678.0">
+        <columns>
+            <TableColumn fx:id="tableColumnFornecedorPago" editable="false" prefWidth="142.0" text="Fornecedor" />
+            <TableColumn fx:id="tableColumnNNFPago" editable="false" prefWidth="47.0" text="NNF" />
+            <TableColumn fx:id="tableColumnVencimentoPago" editable="false" prefWidth="63.0" text="Vencto" />
+            <TableColumn fx:id="tableColumnParcelaPago" editable="false" prefWidth="33.0" text="Parc" />
+            <TableColumn fx:id="tableColumnValorPago" editable="false" prefWidth="47.0" text="Valor" />
+            <TableColumn fx:id="tableColumnJurosPago" editable="false" prefWidth="39.0" text="Juros" />
+            <TableColumn fx:id="tableColumnDescontoPago" editable="false" prefWidth="45.0" text="Descto" />
+            <TableColumn fx:id="tableColumnAPagarPago" editable="false" minWidth="0.0" prefWidth="66.0" text="A Pagar" />
+            <TableColumn fx:id="tableColumnPagoPago" editable="false" prefWidth="56.0" text="Pago" />
+            <TableColumn fx:id="tableColumnPagamentoPago" editable="false" prefWidth="71.0" text="Data Pgto" />
+            <TableColumn fx:id="tableColumnTotalPago" editable="false" prefWidth="55.0" text="Total" />
+        </columns>
+      </TableView>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>

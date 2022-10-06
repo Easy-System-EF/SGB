@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane blendMode="DIFFERENCE" prefHeight="28.0" prefWidth="131.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sgb.CartelaImprimeController">
+   <children>
+      <Button fx:id="btImprimeCartela" layoutX="64.0" layoutY="70.0" mnemonicParsing="false" onAction="#onBtImprimeCartelaAction" prefHeight="22.0" prefWidth="129.0" text="Imprime Cartela" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <padding>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <ColorAdjust brightness="0.01" contrast="0.02" hue="0.01" saturation="0.58" />
+   </effect>
+</AnchorPane>
