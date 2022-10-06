@@ -392,6 +392,9 @@ public class FechamentoMesFormController implements Initializable {
 				fechMes.setValorComissaoFechamentoMes(Mascaras.formataValor(vlrFolha));
 				fechMes.setValorResultadoFechamentoMes(Mascaras.formataValor(impTaxaFolha));
 				fechMes.setValorAcumuladoFechamentoMes(Mascaras.formataValor(porCartela));
+/* tarjado para conferir no -> push git hub
+				fechMes.setMes(objMes);
+*/				
 				fechMes.setMes(objMes);
 				fechMes.setAno(objAno);	
 				service.insert(fechMes);			
